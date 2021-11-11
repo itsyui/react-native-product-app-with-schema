@@ -1,0 +1,102 @@
+{
+	"id": "home",
+	"title": "Home",
+	"url": "/home",
+	"isDefault": true,
+	"orderId": 1,
+	"roles": [],
+	"queryParams": [],
+	"components": {
+		"c031dfce-7a88-8aee-315c-41358e80595b": {
+			"name": "c031dfce-7a88-8aee-315c-41358e80595b",
+			"properties": {
+				"title": "What you like to order today?",
+				"propertyType": "label",
+				"ui:widget": "label",
+				"widgetType": "unbound",
+				"alignText": "left",
+				"headerSize": "h4",
+				"style": {
+					"fontSize": 22,
+					"padding": 10
+				}
+			}
+		},
+		"ab97f755-9795-0b54-1919-a1aa209fc680": {
+			"name": "ab97f755-9795-0b54-1919-a1aa209fc680",
+			"properties": {
+				"title": "Search",
+				"propertyType": "search",
+				"ui:widget": "search",
+				"widget": "SearchWidget",
+				"widgetType": "unbound",
+				"filterbarSearch": false,
+				"typeId": "product",
+				"gridSchemaId": "product"
+			}
+		},
+		"7e52879d-91fa-0339-9941-b32337fe7679": {
+			"name": "7e52879d-91fa-0339-9941-b32337fe7679",
+			"properties": {
+				"title": "Card",
+				"propertyType": "GridCard",
+				"gridSchemaId": "product",
+				"controlID": "",
+				"widget": "GridWidget",
+				"ui:widget": "grid",
+				"gridViewType": "card",
+				"widgetType": "bound",
+				"dataSource": "productsource",
+				"rowSelectionMode": 1,
+				"typeId": "product",
+				"primaryColumn": "id",
+				"gridViewAttributes": {
+					"attributes": {
+						"cardType": "media",
+						"primary": "name",
+						"media": "imageUrl",
+						"incrementalAdd": true
+					}
+				}
+			}
+		}
+	},
+	"pageBinding": {
+		"7e52879d-91fa-0339-9941-b32337fe7679": {
+			"41640926-9e8c-60bb-d7de-51474bf9f8f2": {
+				"name": "navigationOnGridRowSelection",
+				"provider": "GridWidget",
+				"providerId": "",
+				"providerTypeId": "",
+				"providerSchemaId": "",
+				"metadata": {
+					"pageURL": "details",
+					"queryParams": {
+						"id": {
+							"value": "${id}"
+						}
+					}
+				}
+			},
+			"3b0a949d-b387-24d8-cd20-6bc5a77d97e4": {
+				"name": "search",
+				"provider": "SearchWidget",
+				"providerId": "ab97f755-9795-0b54-1919-a1aa209fc680",
+				"providerTypeId": "",
+				"providerSchemaId": "",
+				"metadata": {}
+			}
+		}
+	},
+	"layout": [
+		{
+			"widget": "c031dfce-7a88-8aee-315c-41358e80595b"
+		},
+		{
+			"widget": "ab97f755-9795-0b54-1919-a1aa209fc680"
+		},
+		{
+			"widget": "7e52879d-91fa-0339-9941-b32337fe7679"
+		}
+	]
+}

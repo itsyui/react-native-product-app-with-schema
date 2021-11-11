@@ -1,0 +1,46 @@
+{
+  "id": "cart",
+  "title": "Default",
+  "propertyDefinitions": {
+    "id": {
+      "id": "id",
+      "displayName": "{{Product_ID}}",
+      "title": "Product ID",
+      "propertyType": "integer"
+    },
+    "name": {
+      "id": "name",
+      "displayName": "{{Name}}",
+      "title": "Name",
+      "propertyType": "string"
+    },
+    "price": {
+      "id": "price",
+      "displayName": "{{Price}}",
+      "title": "Price",
+      "propertyType": "integer"
+    },
+    "imageUrl": {
+      "id": "imageUrl",
+      "displayName": "{{Image_URL}}",
+      "title": "Image URL",
+      "propertyType": "string"
+    }
+  },
+  "viewAttributes": {
+    "customAction": {
+      "title": "",
+      "actions": [
+        {
+          "name": "remove_item",
+          "displayText": "Remove",
+          "bounded": true,
+          "roles": [],
+          "isPrimary": true,
+          "iconPosition": "startIcon",
+          "icon": "delete"
+        }
+      ]
+    }
+  }
+}

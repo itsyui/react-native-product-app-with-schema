@@ -1,0 +1,84 @@
+{
+	"id": "cart",
+	"title": "Cart",
+	"url": "/cart",
+	"isDefault": false,
+	"orderId": 4,
+	"roles": [],
+	"queryParams": [],
+	"components": {
+		"4b720e54-2d24-f40c-d64d-618c2bd5a149": {
+			"name": "4b720e54-2d24-f40c-d64d-618c2bd5a149",
+			"properties": {
+				"title": "List",
+				"propertyType": "GridList",
+				"gridSchemaId": "cart",
+				"controlID": "",
+				"widget": "GridWidget",
+				"ui:widget": "grid",
+				"gridViewType": "list",
+				"widgetType": "bound",
+				"dataSource": "productsource",
+				"rowSelectionMode": 1,
+				"typeId": "cart",
+				"primaryColumn": "id",
+				"gridViewAttributes": {
+					"attributes": {
+						"listType": "simpleVertical",
+						"primary": "name",
+						"secondary": "price",
+						"avatar": "imageUrl",
+						"incrementalAdd": true
+					}
+				},
+				"emptyRecordsMessage": "No items in cart",
+				"padding": 5
+			}
+		},
+		"a2d55adf-80f4-45a0-fe67-9ab3f4ea82e8": {
+			"name": "a2d55adf-80f4-45a0-fe67-9ab3f4ea82e8",
+			"properties": {
+				"title": "Checkout",
+				"propertyType": "commandButton",
+				"ui:widget": "commandButton",
+				"widgetType": "unbound",
+				"widget": "commandButtonWidget",
+				"iconPosition": "startIcon",
+				"iconName": "shopping-cart",
+				"commandName": "checkout",
+				"alignText": "center",
+				"padding": 5
+			}
+		}
+	},
+	"pageBinding": {},
+	"layout": [
+		{
+			"columns": [
+				{
+					"cell": [
+						{
+							"widget": "4b720e54-2d24-f40c-d64d-618c2bd5a149"
+						}
+					]
+				}
+			]
+		},
+		{
+			"columns": [
+				{}
+			]
+		},
+		{
+			"columns": [
+				{
+					"cell": [
+						{
+							"widget": "a2d55adf-80f4-45a0-fe67-9ab3f4ea82e8"
+						}
+					]
+				}
+			]
+		}
+	]
+}

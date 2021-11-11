@@ -1,0 +1,92 @@
+{
+  "id": "product",
+  "title": "Product Description",
+  "styles": {
+    "className": "product_description_card"
+  },
+  "propertyDefinitions": {
+    "id": {
+      "id": "id",
+      "displayName": "productId",
+      "title": "id",
+      "propertyType": "string"
+    },
+    "name": {
+      "id": "name",
+      "displayName": "Name",
+      "title": "Product name",
+      "propertyType": "string",
+      "ui:widget": "label",
+      "style": {
+        "fontSize": "1.25rem",
+        "fontWeight": "600"
+      }
+    },
+    "price": {
+      "id": "price",
+      "displayName": "Price",
+      "title": "Price",
+      "propertyType": "integer",
+      "ui:widget": "label",
+      "style": {
+        "fontSize": "20px",
+        "justifyContent": "flex-end"
+      },
+      "className": "price_amount"
+    },
+    "description": {
+      "id": "description",
+      "displayName": "Description",
+      "title": "Description",
+      "propertyType": "string",
+      "ui:widget": "label",
+      "style": {
+        "color": "darkgray"
+      }
+    },
+    "imageUrl": {
+      "id": "imageUrl",
+      "displayName": "{{Image_URL}}",
+      "propertyType": "string",
+      "title": "Image URL",
+      "ui:widget": "image_control",
+      "alignment": "center",
+      "fieldSchema": {
+        "image_type": "base64",
+        "model": "product_sample"
+      }
+    }
+  },
+  "layout": {
+    "rows": [
+      {
+        "columns": [
+          {
+            "widget": "imageUrl",
+            "className": "details-image"
+          }
+        ]
+      },
+      {
+        "columns": [
+          {
+            "widget": "name",
+            "span": 6
+          },
+          {
+            "widget": "price",
+            "span": 6,
+            "className": "product-price"
+          }
+        ]
+      },
+      {
+        "columns": [
+          {
+            "widget": "description"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+	"id": "details",
+	"title": "Details",
+	"url": "/details",
+	"orderId": 3,
+	"roles": [],
+	"queryParams": [
+		{
+			"isBounded": true,
+			"queryParamName": "id"
+		}
+	],
+	"components": {
+		"6cd1b5c1-3245-32ea-db00-1d4891db30a1": {
+			"name": "6cd1b5c1-3245-32ea-db00-1d4891db30a1",
+			"properties": {
+				"id": "product",
+				"title": "Card",
+				"ui:widget": "detailsPage"
+			}
+		}
+	},
+	"pageBinding": {},
+	"layout": [
+		{
+			"widget": "6cd1b5c1-3245-32ea-db00-1d4891db30a1"
+		}
+	]
+}

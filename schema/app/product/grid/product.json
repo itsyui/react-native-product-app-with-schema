@@ -1,0 +1,45 @@
+{
+  "id": "product",
+  "title": "Default",
+  "propertyDefinitions": {
+    "id": {
+      "id": "id",
+      "displayName": "{{Product_ID}}",
+      "propertyType": "integer",
+      "title": "Product ID"
+    },
+    "name": {
+      "id": "name",
+      "displayName": "{{Name}}",
+      "propertyType": "string",
+      "title": "Name"
+    },
+    "description": {
+      "id": "description",
+      "displayName": "{{Description}}",
+      "propertyType": "string",
+      "title": "Description"
+    },
+    "price": {
+      "id": "price",
+      "displayName": "{{Price}}",
+      "propertyType": "integer",
+      "title": "Price"
+    },
+    "imageUrl": {
+      "id": "imageUrl",
+      "displayName": "{{Image_URL}}",
+      "propertyType": "string",
+      "title": "Image URL"
+    }
+  },
+  "viewAttributes": {
+    "filterColumns": [
+      "name"
+    ],
+    "customAction": {
+      "title": "",
+      "actions": []
+    }
+  }
+}

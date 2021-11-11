@@ -1,0 +1,50 @@
+{
+  "id": "cart",
+  "title": "Default",
+  "description": "Default schema",
+  "uniquePropertyId": "",
+  "propertyDefinitions": {
+    "id": {
+      "id": "id",
+      "displayName": "{{Product_ID}}",
+      "propertyType": "integer",
+      "ui:widget": "integer",
+      "fieldKey": "id"
+    },
+    "name": {
+      "id": "name",
+      "displayName": "{{Name}}",
+      "propertyType": "string",
+      "ui:widget": "text",
+      "fieldKey": "name"
+    },
+    "price": {
+      "id": "price",
+      "displayName": "{{Price}}",
+      "propertyType": "integer",
+      "ui:widget": "integer",
+      "fieldKey": "price"
+    },
+    "imageUrl": {
+      "id": "imageUrl",
+      "displayName": "{{Image_URL}}",
+      "propertyType": "string",
+      "ui:widget": "text",
+      "fieldKey": "imageUrl"
+    }
+  },
+  "sections": [
+    {
+      "widget": "id"
+    },
+    {
+      "widget": "name"
+    },
+    {
+      "widget": "price"
+    },
+    {
+      "widget": "imageUrl"
+    }
+  ]
+}

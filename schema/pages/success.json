@@ -1,0 +1,44 @@
+{
+	"id": "success",
+	"title": "Success",
+	"url": "/success",
+	"orderId": 6,
+	"roles": [],
+	"queryParams": [],
+	"components": {
+		"e3d96301-eff3-4bd5-4982-99be35356275": {
+			"name": "e3d96301-eff3-4bd5-4982-99be35356275",
+			"properties": {
+				"title": "Order placed successfully.",
+				"propertyType": "label",
+				"ui:widget": "label",
+				"widgetType": "unbound",
+				"headerSize": "h3",
+				"alignText": "left",
+				"style": {
+					"fontSize": 20,
+					"padding": 10
+				}
+			}
+		}
+	},
+	"pageBinding": {},
+	"layout": [
+		{
+			"columns": [
+				{}
+			]
+		},
+		{
+			"columns": [
+				{
+					"cell": [
+						{
+							"widget": "e3d96301-eff3-4bd5-4982-99be35356275"
+						}
+					]
+				}
+			]
+		}
+	]
+}
